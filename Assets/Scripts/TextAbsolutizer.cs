@@ -3,6 +3,7 @@ using System.Collections;
 
 public class TextAbsolutizer : MonoBehaviour {
 
+	public GameObject camera;
 	public GameObject player;
 	private Vector3 offset;
 
@@ -14,5 +15,6 @@ public class TextAbsolutizer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		this.transform.position = player.transform.position + offset;
+		this.transform.LookAt (camera.transform);
 	}
 }

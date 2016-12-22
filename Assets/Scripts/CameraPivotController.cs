@@ -15,11 +15,11 @@ public class CameraPivotController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		this.transform.position = player.position;
-
-		float xAxis = Input.GetAxis ("Horizontal");
-		Debug.Log ("Current axis: " + xAxis);
-
-		yRotation += 1;
-		this.transform.rotation = Quaternion.Euler(0, yRotation, 0);
+		 
+		// float xAxis = Input.GetAxis ("Horizontal");
+		// Debug.Log ("Current axis: " + xAxis);
+		 
+		// yRotation += 1;
+		// this.transform.rotation = Quaternion.Euler(0, yRotation, 0);
 	}
 }
